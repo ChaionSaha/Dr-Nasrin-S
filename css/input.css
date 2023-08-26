@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .container {
-	@apply mx-auto;
+	@apply px-5 mx-auto lg:px-0;
 }
 
 .active-navlink {
@@ -15,4 +15,18 @@
 
 .navbar-social-link {
 	@apply text-lg bg-transparent border-transparent rounded-full btn btn-sm text-primary hover:border-primary hover:bg-transparent;
+}
+
+.benefits-card {
+	@apply flex flex-col items-center justify-center p-5 duration-150 gap-y-2;
+	& > i {
+		@apply text-2xl duration-150 text-secondary;
+	}
+
+	&:hover {
+		@apply text-white cursor-pointer bg-primary;
+		& > i {
+			@apply text-white;
+		}
+	}
 }
