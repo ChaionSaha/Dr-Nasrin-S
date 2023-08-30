@@ -573,7 +573,7 @@
 					<p class="relative mt-3 text-3xl">
 						Feel Free to Contact
 						<span
-							class="absolute left-0 bottom-[-20%] w-[52%] h-1 border-primary bg-primary"
+							class="absolute left-0 bottom-[-20%] w-[20%] h-1 border-primary bg-primary"
 						></span>
 					</p>
 				</div>
@@ -581,12 +581,12 @@
 				<div class="grid mt-16 font-medium lg:grid-cols-2 gap-x-20 gap-y-10">
 					<div class="relative feedback-input">
 						<span
-							class="absolute bottom-[10%] text-xl left-0 text-base-300 duration-100"
+							class="absolute z-10 bottom-[10%] text-xl left-0 text-base-300 duration-100"
 							>Enter Name</span
 						>
 						<input
 							type="text"
-							class="p-3 w-full px-0 border-b-2 duration-150 focus:border-0 focus:border-b focus:border-[#499AFA] focus:outline-0"
+							class="p-3 z-[100] w-full px-0 border-b-2 duration-150 focus:border-0 focus:border-b focus:border-[#499AFA] focus:outline-0"
 						/>
 					</div>
 					<div class="relative feedback-input">
@@ -644,6 +644,26 @@
 		</div>
 
 		<!-- blogs section -->
+		<div class="container flex flex-col mt-36">
+			<div class="flex flex-col self-center font-medium text-center">
+				<p>Latest <span class="text-primary">Blogs</span></p>
+				<p class="relative mt-3 text-3xl">Blog & Articles</p>
+			</div>
+			<div class="grid grid-cols-3 mt-20">
+				<div class="flex flex-col">
+					<img src="./img/blog-1.png" alt="" />
+					<div class="flex justify-between">
+						<p class="text-primary">By Dr. Nasrin Sultana</p>
+						<p class="text-base-200">Mar 8, 2023</p>
+					</div>
+					<p class="text-2xl">Pet Obesity Tips for a Healthy Weight</p>
+					<p>
+						Dolor repellendus temporibus autem quibusdam officiis debitis rerum
+						nece aibus minima veniam.
+					</p>
+				</div>
+			</div>
+		</div>
 
 		<script>
 			'use strict';
@@ -686,7 +706,7 @@
 			const fdInpts = document.querySelectorAll('.feedback-input');
 
 			document.addEventListener('click', (e) => {
-				// e.preventDefault();
+				// console.log(e.target);
 				fdInpts.forEach((fd) => {
 					if (
 						fd.children[1] === document.activeElement ||
@@ -698,7 +718,8 @@
 						fd.children[1].value == ''
 					) {
 						fd.children[0].classList.remove('change-position');
-					} else if (e.target === fd.children[0] || e.target === fd) {
+					}
+					if (e.target === fd.children[0] || e.target === fd) {
 						console.log('s happend');
 						fd.children[1].focus();
 					}
@@ -707,7 +728,6 @@
 
 			fdInpts.forEach((fd) => {
 				fd.children[1].addEventListener('focus', (e) => {
-					// console.log(e);
 					fd.children[0].classList.add('change-position');
 					if (
 						fd.children[1] === document.activeElement ||
