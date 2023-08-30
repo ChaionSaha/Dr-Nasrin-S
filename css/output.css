@@ -7997,6 +7997,22 @@ details.collapse summary::-webkit-details-marker{
   height: 100%;
 }
 
+.h-\[15vh\]{
+  height: 15vh;
+}
+
+.h-\[20vh\]{
+  height: 20vh;
+}
+
+.h-\[30vh\]{
+  height: 30vh;
+}
+
+.h-\[25vh\]{
+  height: 25vh;
+}
+
 .w-3{
   width: 0.75rem;
 }
