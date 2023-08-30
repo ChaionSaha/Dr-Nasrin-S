@@ -7822,6 +7822,10 @@ details.collapse summary::-webkit-details-marker{
   clear: none;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .mb-20{
   margin-bottom: 5rem;
 }
@@ -8098,6 +8102,10 @@ details.collapse summary::-webkit-details-marker{
   transform: none;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .touch-auto{
   touch-action: auto;
 }
@@ -8370,10 +8378,6 @@ details.collapse summary::-webkit-details-marker{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-row{
   flex-direction: row;
 }
@@ -8556,6 +8560,10 @@ details.collapse summary::-webkit-details-marker{
 
 .justify-items-stretch{
   justify-items: stretch;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-x-1{
@@ -8909,6 +8917,10 @@ details.collapse summary::-webkit-details-marker{
   border-radius: 0.25rem;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -9021,6 +9033,10 @@ details.collapse summary::-webkit-details-marker{
   border-right-width: 1px;
 }
 
+.border-r-2{
+  border-right-width: 2px;
+}
+
 .border-s{
   border-inline-start-width: 1px;
 }
@@ -9057,6 +9073,11 @@ details.collapse summary::-webkit-details-marker{
   border-style: none;
 }
 
+.border-\[\#514971\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(81 73 113 / var(--tw-border-opacity));
+}
+
 .border-\[\#D4D4D44D\]{
   border-color: #D4D4D44D;
 }
@@ -9078,6 +9099,11 @@ details.collapse summary::-webkit-details-marker{
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-accent{
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--a) / var(--tw-bg-opacity));
 }
 
 .bg-base-100{
@@ -9214,6 +9240,10 @@ details.collapse summary::-webkit-details-marker{
      object-fit: scale-down;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -9241,6 +9271,11 @@ details.collapse summary::-webkit-details-marker{
   padding-right: 2.5rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -9249,6 +9284,31 @@ details.collapse summary::-webkit-details-marker{
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-left{
@@ -10318,8 +10378,18 @@ details.collapse summary::-webkit-details-marker{
   }
 }
 
+.hover\:bg-primary:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover{
   font-weight: 700;
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before{
