@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	z-index: inherit;
+}
+
 .container {
 	@apply px-5 mx-auto lg:px-0;
 }
@@ -64,4 +68,15 @@
 
 .change-position {
 	@apply translate-y-[-200%] text-[#499AFA] text-sm;
+}
+
+.project-img {
+	&::after {
+		content: '';
+		@apply absolute h-full w-2 border border-primary top-[5%] left-[-2%] z-[-1] border-r-0;
+	}
+}
+
+.active-tab {
+	@apply text-black border-b-2 border-primary;
 }

@@ -177,22 +177,383 @@
 		</div>
 
 		<!-- recent projects section -->
-		<div class="container flex flex-col mt-36">
-			<div class="flex justify-between">
+		<div class="container flex flex-col mb-20 mt-36">
+			<div class="flex flex-col justify-between gap-y-10 lg:flex-row">
 				<div class="flex flex-col font-medium">
 					<p>Recent <span class="text-primary">Projects</span></p>
 					<p class="relative mt-3 text-5xl">My Recent Projects</p>
 				</div>
 				<div class="flex gap-x-5">
-					<button class="text-xl rounded-none btn-outline btn btn-primary">
+					<button
+						class="text-xl rounded-none btn-outline btn btn-primary"
+						id="prev"
+					>
 						<i class="bi bi-arrow-left"></i>
 					</button>
-					<button class="text-xl rounded-none btn-outline btn btn-primary">
+					<button
+						class="text-xl rounded-none btn-outline btn btn-primary"
+						id="next"
+					>
 						<i class="bi bi-arrow-right"></i>
 					</button>
 				</div>
-				<div class="slide-container">
-					<div class="slide"></div>
+			</div>
+			<div
+				class="w-full relative lg:h-[70vh] h-[100vh] overflow-x-hidden mt-10 slide-container"
+			>
+				<div class="slide w-[100%] flex justify-center">
+					<div class="w-[95%] grid gap-y-5 lg:grid-cols-3 gap-x-10">
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-1.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-2.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-3.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide w-[100%] flex justify-center">
+					<div class="w-[95%] grid gap-y-5 lg:grid-cols-3 gap-x-10">
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-1.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-2.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-3.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide w-[100%] flex justify-center">
+					<div class="w-[95%] grid gap-y-5 lg:grid-cols-3 gap-x-10">
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-1.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-2.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+						<div class="relative z-10 flex flex-col shadow-3xl h-fit">
+							<div class="relative project-img">
+								<img src="./img/project-3.png" class="w-full" alt="" />
+							</div>
+							<div class="z-10 flex flex-col px-10 pb-10 mt-5 gap-y-5">
+								<p class="z-10 font-medium text-primary">Dental Problems</p>
+								<p class="z-10 text-xl">
+									Recognizing and Managing Dental Problems in Pets
+								</p>
+								<p class="z-10 text-base-200">
+									Lorem Ipsum Is Simply Dummy Text Of The Printing And
+									Typesetting Industry.
+								</p>
+								<a
+									class="flex items-center cursor-pointer gap-x-2 text-primary hover:underline"
+									>View Case Studies <i class="bi bi-arrow-right"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="self-center mt-10">
+				<button
+					class="font-normal text-white normal-case rounded-full btn btn-primary btn-lg"
+				>
+					Explore More
+				</button>
+			</div>
+		</div>
+
+		<!-- my portfolio section -->
+		<div class="container flex flex-col mt-36">
+			<div class="flex flex-col self-center font-medium text-center">
+				<p>My <span class="text-primary">Portfolio</span></p>
+				<p class="mt-3 text-5xl">My Class Example</p>
+			</div>
+
+			<!-- Naves and tabs -->
+			<div class="flex flex-col mt-20">
+				<div class="self-center text-lg text-black tabs w-fit">
+					<a class="tab tab-lg active-tab" data-target="all">All</a>
+					<a class="tab tab-lg" data-target="branding">Branding</a>
+					<a class="tab tab-lg" data-target="photography">Photography</a>
+					<a class="tab tab-lg" data-target="surgery">Surgery</a>
+					<a class="tab tab-lg" data-target="obstetrics">Obstetrics</a>
+				</div>
+				<div class="flex flex-col mt-10">
+					<div class="grid gap-10 tab-details lg:grid-cols-3" id="all">
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+					</div>
+
+					<div class="grid gap-10 tab-details lg:grid-cols-3" id="branding">
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+					</div>
+
+					<div class="grid gap-10 tab-details lg:grid-cols-3" id="photography">
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+					</div>
+
+					<div class="grid gap-10 tab-details lg:grid-cols-3" id="surgery">
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+					</div>
+
+					<div class="grid gap-10 tab-details lg:grid-cols-3" id="obstetrics">
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+						<div class="flex flex-col p-5 shadow-3xl">
+							<p class="text-lg font-medium">Veterinary Surgeries</p>
+							<p class="mt-1 text-base-200">Anxiety in Dogs</p>
+							<img src="./img/surgery.png" class="w-full mt-4" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- faq section -->
+		<div class="container grid mt-40 lg:grid-cols-2">
+			<div class="flex flex-col">
+				<div class="flex flex-col font-medium r">
+					<p>FAQ</p>
+					<p class="w-3/4 mt-3 text-5xl">Frequently Asked Questions</p>
+				</div>
+
+				<div class="collapse collapse-plus">
+					<input type="radio" name="my-accordion-3" checked="checked" />
+					<div class="text-xl font-medium collapse-title">
+						Click to open this one and close others
+					</div>
+					<div class="collapse-content">
+						<p>hello</p>
+					</div>
+				</div>
+				<div class="collapse collapse-plus">
+					<input type="radio" name="my-accordion-3" />
+					<div class="text-xl font-medium collapse-title">
+						Click to open this one and close others
+					</div>
+					<div class="collapse-content">
+						<p>hello</p>
+					</div>
+				</div>
+				<div class="collapse collapse-plus">
+					<input type="radio" name="my-accordion-3" />
+					<div class="text-xl font-medium collapse-title">
+						Click to open this one and close others
+					</div>
+					<div class="collapse-content">
+						<p>hello</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -248,5 +609,7 @@
 				<p>© 2023 Dr. NasrinS All Rights Reserved by Code Studio</p>
 			</div>
 		</div>
+
+		<script src="./js/index.js"></script>
 	</body>
 </html>
