@@ -5,10 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	z-index: inherit;
-}
-
 .container {
 	@apply px-5 mx-auto lg:px-0;
 }

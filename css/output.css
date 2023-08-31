@@ -7774,6 +7774,34 @@ details.collapse summary::-webkit-details-marker{
   top: -50%;
 }
 
+.right-\[-10\%\]{
+  right: -10%;
+}
+
+.right-\[-50\%\]{
+  right: -50%;
+}
+
+.right-\[-20\%\]{
+  right: -20%;
+}
+
+.right-\[-30\%\]{
+  right: -30%;
+}
+
+.right-\[-40\%\]{
+  right: -40%;
+}
+
+.right-\[-0\%\]{
+  right: -0%;
+}
+
+.right-\[0\%\]{
+  right: 0%;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -7792,6 +7820,14 @@ details.collapse summary::-webkit-details-marker{
 
 .z-\[1\]{
   z-index: 1;
+}
+
+.z-\[-1\]{
+  z-index: -1;
+}
+
+.z-\[10\]{
+  z-index: 10;
 }
 
 .col-span-2{
@@ -9182,11 +9218,6 @@ details.collapse summary::-webkit-details-marker{
   background-color: hsl(var(--s) / var(--tw-bg-opacity));
 }
 
-.bg-base-200{
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b2) / var(--tw-bg-opacity));
-}
-
 .bg-opacity-60{
   --tw-bg-opacity: 0.6;
 }
@@ -9317,6 +9348,10 @@ details.collapse summary::-webkit-details-marker{
   padding: 1.25rem;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
@@ -9362,8 +9397,28 @@ details.collapse summary::-webkit-details-marker{
   padding-bottom: 1.75rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
+}
+
+.ps-0{
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .text-left{
@@ -9925,10 +9980,6 @@ details.collapse summary::-webkit-details-marker{
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\]{
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
-}
-
-* {
-  z-index: inherit;
 }
 
 .container{
@@ -10571,6 +10622,10 @@ details.collapse summary::-webkit-details-marker{
 @media (min-width: 992px){
   .lg\:absolute{
     position: absolute;
+  }
+
+  .lg\:right-\[0\%\]{
+    right: 0%;
   }
 
   .lg\:col-span-2{
