@@ -84,3 +84,12 @@
 		}
 	}
 }
+
+.gallery-img {
+	@apply cursor-pointer;
+	&:hover {
+		.gallery-img-link {
+			opacity: 1;
+		}
+	}
+}
