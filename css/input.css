@@ -76,3 +76,11 @@
 .active-tab {
 	@apply text-black border-b-2 border-primary;
 }
+
+.blog {
+	&:hover {
+		.blog-name {
+			@apply text-primary;
+		}
+	}
+}

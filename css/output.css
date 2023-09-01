@@ -7830,6 +7830,10 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: 2.5rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .mb-20{
   margin-bottom: 5rem;
 }
@@ -8412,6 +8416,10 @@ details.collapse summary::-webkit-details-marker{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -8662,6 +8670,10 @@ details.collapse summary::-webkit-details-marker{
 
 .gap-y-5{
   row-gap: 1.25rem;
+}
+
+.gap-y-16{
+  row-gap: 4rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -9142,6 +9154,11 @@ details.collapse summary::-webkit-details-marker{
   border-color: transparent;
 }
 
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-\[\#2C2C2C\]{
   --tw-bg-opacity: 1;
   background-color: rgb(44 44 44 / var(--tw-bg-opacity));
@@ -9180,6 +9197,16 @@ details.collapse summary::-webkit-details-marker{
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: hsl(var(--s) / var(--tw-bg-opacity));
+}
+
+.bg-base-200{
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b2) / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F5F5F5\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60{
@@ -9434,6 +9461,11 @@ details.collapse summary::-webkit-details-marker{
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl{
@@ -10383,6 +10415,15 @@ details.collapse summary::-webkit-details-marker{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.blog {
+  &:hover {
+    .blog-name{
+      --tw-text-opacity: 1;
+      color: hsl(var(--p) / var(--tw-text-opacity));
+    }
+  }
+}
+
 @media (hover:hover){
   .table .hover\:hover:hovertr:hover,
   .table .hover\:hover:hovertr:nth-child(even):hover{
@@ -10512,6 +10553,11 @@ details.collapse summary::-webkit-details-marker{
   font-weight: 700;
 }
 
+.hover\:text-primary:hover{
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
+}
+
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -10638,6 +10684,10 @@ details.collapse summary::-webkit-details-marker{
     width: 50%;
   }
 
+  .lg\:w-\[80\%\]{
+    width: 80%;
+  }
+
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -10648,6 +10698,10 @@ details.collapse summary::-webkit-details-marker{
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:flex-col{
+    flex-direction: column;
   }
 
   .lg\:items-center{
